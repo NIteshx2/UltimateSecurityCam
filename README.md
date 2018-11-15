@@ -1,5 +1,5 @@
 # UltimateSecurityCam
-An in-hack-able security camera which is impossible to fool .
+An un-hack-able security camera which is impossible to fool .
 
 This is a security camera software which detects any intruder and alerts the owner .
 This is the basic prototype , we'll make it un-hack-able by using microphone and eminiting every possible hack to fool our software.
