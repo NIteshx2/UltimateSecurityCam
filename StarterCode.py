@@ -5,6 +5,8 @@ import numpy as np
 import pygame
 import time
 
+#if you get error while importing the google how to install <Package Name> in python 3.6
+
 THRESHOLD = 40
 camera = cv2.VideoCapture(0)
 
