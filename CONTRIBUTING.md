@@ -24,3 +24,6 @@ Before contributing, check whether the algorithm has already been implemented or
 2. Keep the variable naming consistent and concise , Make sure other parts of code aren't affected by your changes.
 3. Update the [README](README.md) about the code.
 4. Commit and push the changes, then submit a Pull Request.
+
+### Community support :
+ 1. If the project gets proper response , we'll create a channel on slack or gitter.
