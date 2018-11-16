@@ -9,6 +9,10 @@
 - Python 3.6
 - Opencv (CV2) [tutorial](https://pythonprogramming.net/loading-images-python-opencv-tutorial/)
 
+### How it works ?
+We take a snapshot of the room , lets call this base.jpg. Now , continuously scan the current frame and subtract it from base.jpg
+if the differnce is more than a treshold , we'll consider a breach happening.
+
 ## Setup instructions : 
 - To run , simply copy the code in the StarterCode.py and run it.
   - If you need a python IDE , I recommend using pycharm. [Tutorial to install : ](https://www.youtube.com/watch?v=QzcaEELafkE).
