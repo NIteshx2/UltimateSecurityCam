@@ -26,4 +26,4 @@ Before contributing, check whether the algorithm has already been implemented or
 4. Commit and push the changes, then submit a Pull Request.
 
 ### Community support :
- 1. If the project gets proper response , we'll create a channel on slack or gitter.
+ 1. You can ask for any kind help from the community on the NWOC gitter channel [here](https://gitter.im/NWoC/NWoC2018)
