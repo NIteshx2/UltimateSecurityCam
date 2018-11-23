@@ -2,8 +2,14 @@
 #### An easy-to-build , un-hack-able security camera which is impossible to fool . "Beginner Friendly"
 ###### Made with :heart: in python.
 
+##### Working demo video  [here](SampleVid/SecurityCam.mp4)
+##### To ask doubts and staying in touch , join our [gitter channel](https://gitter.im/UltimateSecurityCam/Lobby) 
+
+[![Chat at gitter](https://img.shields.io/badge/Chat%20on%20-Gitter-brightgreen.svg)](https://gitter.im/UltimateSecurityCam/Lobby)
 - This is a security camera software which detects any intruder and alerts the owner .
 - This is the basic prototype , we'll make it un-hack-able by using microphone and eliminiting every possible hack to fool our software.
+- Many issues are up-for-grabs. Check them out from issues tab.
+
 
 ### Technologies used :
 - Python 3.6
@@ -20,7 +26,7 @@ if the differnce is more than a treshold , we'll consider a breach happening.
 
 
 ## Running instructions : 
-- Open up StarterCode.py in your preferred python IDE [StarterCode.py](StarterCode.py)
+- Open up StarterCode.py in your preferred python IDE [UltimateSecurityCam.py](PythonCode/UltimateSecurityCam.py)
 
 - Run using python , 3.6 is recommended.
 - The program takes 3-second waiting time, after that it starts detecting motion , making an alert sound.
