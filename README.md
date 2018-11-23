@@ -4,6 +4,8 @@
 
 ##### Working demo video  [here](SampleVid/SecurityCam.mp4)
 ##### To ask doubts and staying in touch , join our [gitter channel](https://gitter.im/UltimateSecurityCam/Lobby) 
+
+[![Chat at gitter](https://img.shields.io/badge/Chat%20on%20-Gitter-brightgreen.svg)](https://gitter.im/UltimateSecurityCam/Lobby)
 - This is a security camera software which detects any intruder and alerts the owner .
 - This is the basic prototype , we'll make it un-hack-able by using microphone and eliminiting every possible hack to fool our software.
 - Many issues are up-for-grabs. Check them out from issues tab.
