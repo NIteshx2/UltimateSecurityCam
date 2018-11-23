@@ -2,7 +2,7 @@
 #### An easy-to-build , un-hack-able security camera which is impossible to fool . "Beginner Friendly"
 ###### Made with :heart: in python.
 
-Working demo video  [here](Running sample videos/SecurityCam.mp4)
+Working demo video  [here](SampleVid/SecurityCam.mp4)
 
 - This is a security camera software which detects any intruder and alerts the owner .
 - This is the basic prototype , we'll make it un-hack-able by using microphone and eliminiting every possible hack to fool our software.
