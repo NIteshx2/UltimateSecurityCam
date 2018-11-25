@@ -21,6 +21,7 @@ if the differnce is more than a treshold , we'll consider a breach happening.
 
 ## Setup instructions : 
 - To run , simply copy the code in the StarterCode.py and run it.
+- More formally , fork the code , and clone it your machine . I recommend that you use the github desktop app.
   - If you need a python IDE , I recommend using pycharm. [Tutorial to install : ](https://www.youtube.com/watch?v=QzcaEELafkE).
   - If you get an error , make sure all the **import statements are working** , if not , install using pip-install [tutorial](https://www.youtube.com/watch?v=237dNNQhD3Q)
 
