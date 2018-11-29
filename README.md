@@ -33,3 +33,12 @@ if the differnce is more than a treshold , we'll consider a breach happening.
 - The program takes 3-second waiting time, after that it starts detecting motion , making an alert sound.
 
 Many improvements and developments are in the pipeline ! to know more, contact on github or niteshx22@gmail.com
+
+# Get in touch :
+[LinkedIN](https://www.linkedin.com/in/niteshx2/)
+
+[Instagram](https://www.instagram.com/nitz_chaudhry/)
+
+[Facebook](https://www.facebook.com/niteshx2)
+
+[Follow me on Github](https://github.com/NIteshx2)
