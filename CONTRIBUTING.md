@@ -3,7 +3,7 @@
 Before contributing, check whether the algorithm has already been implemented or not.
 
 ### Setting up the repo locally
-
+##### (You can also do the same process on github desktop if you prefer)
 1. Fork the repo in your account.
 
 2. Clone it into your machine.
