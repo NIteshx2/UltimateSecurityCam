@@ -27,7 +27,7 @@ if the differnce is more than a treshold , we'll consider a breach happening.
 
 
 ## Running instructions : 
-- Open up StarterCode.py in your preferred python IDE [UltimateSecurityCam.py](PythonCode/UltimateSecurityCam.py)
+- Open up StarterCode.py in your preferred python IDE [windows.py](PythonCode/Windows.py)
 
 - Run using python , 3.6 is recommended.
 - The program takes 3-second waiting time, after that it starts detecting motion , making an alert sound.
