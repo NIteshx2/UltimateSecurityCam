@@ -27,7 +27,7 @@ if the differnce is more than a treshold , we'll consider a breach happening.
 
 ## UltimateSecurityCam running on Linux
 
-Command(with Linux as the working directory):
+Command (with Linux as the working directory):
 
 `python UltimateSecurityCam.py`
 
