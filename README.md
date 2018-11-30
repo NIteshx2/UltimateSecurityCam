@@ -49,6 +49,9 @@ If the difference is more than a threshold , we'll consider a breach happening.
   - If you get an error , make sure all the **import statements are working** , if not , install using pip-install [tutorial](https://www.youtube.com/watch?v=237dNNQhD3Q)
 
 
+## Running instructions : 
+- Open up StarterCode.py in your preferred python IDE [windows.py](PythonCode/Windows.py)
+
 
 ## Running
 ---
