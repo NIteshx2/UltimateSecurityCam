@@ -29,13 +29,24 @@ def reset_camera():
 	python = sys.executable
 	os.execl(python, python, * sys.argv)
 
+initial = int(time.time())
+final = initial + 4
 
-count = 3
+while (final-initial):
+	ret, frame = camera.read()
+	Text = "Starting in " + str(final-initial) + "..."
+	cv2.putText(frame,Text,(60,30),cv2.FONT_HERSHEY_TRIPLEX,1,(0,100,255),2)
+	cv2.imshow("contours",frame)
+	
+	if cv2.waitKey(int(45)) &0xff == ord('q'):
+		break
+	
+	elif int(time.time()) == (initial + 1):
+		initial = initial + 1
+		print(str(final-initial) + "...")
+		
+	
 while (True):
-	while count > 0 :
-		time.sleep(1)
-		count -= 1
-		print(str(count) + "...")
 	ret, frame = camera.read()
 	# The first frame as the background
 	if background is None:
