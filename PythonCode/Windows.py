@@ -21,21 +21,32 @@ cameraSound = pygame.mixer.Sound("snapshotsound.ogg")
 size = (int(camera.get(cv2.CAP_PROP_FRAME_WIDTH)),
 		int(camera.get(cv2.CAP_PROP_FRAME_HEIGHT)))
 videoWriter = cv2.VideoWriter('C:\\basic_motion_detection.avi',
-                              cv2.VideoWriter_fourcc('D', 'I', 'V', 'X'),
-                              fps, size)
+				  cv2.VideoWriter_fourcc('D', 'I', 'V', 'X'),
+				  fps, size)
 
 def reset_camera():
 	#Reset the current program.
 	python = sys.executable
 	os.execl(python, python, * sys.argv)
 
+initial = int(time.time())
+final = initial + 4
 
-count = 3
+while (final-initial):
+	ret, frame = camera.read()
+	Text = "Starting in " + str(final-initial) + "..."
+	cv2.putText(frame,Text,(60,30),cv2.FONT_HERSHEY_TRIPLEX,1,(0,100,255),2)
+	cv2.imshow("contours",frame)
+	
+	if cv2.waitKey(int(45)) &0xff == ord('q'):
+		break
+	
+	elif int(time.time()) == (initial + 1):
+		initial = initial + 1
+		print(str(final-initial) + "...")
+		
+	
 while (True):
-	while count > 0 :
-		time.sleep(1)
-		count -= 1
-		print(str(count) + "...")
 	ret, frame = camera.read()
 	# The first frame as the background
 	if background is None:
@@ -53,7 +64,7 @@ while (True):
 	diff = cv2.dilate(diff, es, iterations=2)
 	# Calculate the outline of the target in the image
 	image, cnts, hierarchy = cv2.findContours(diff.copy(),
-											  cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+						  cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 	print ("Detecting " + str(len(cnts)) + " Moving Objects")
 	if len(cnts) > 0:
 		cameraSound.play()
