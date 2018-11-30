@@ -25,6 +25,9 @@ if the differnce is more than a treshold , we'll consider a breach happening.
   - If you need a python IDE , I recommend using pycharm. [Tutorial to install : ](https://www.youtube.com/watch?v=QzcaEELafkE).
   - If you get an error , make sure all the **import statements are working** , if not , install using pip-install [tutorial](https://www.youtube.com/watch?v=237dNNQhD3Q)
 
+## UltimateSecurityCam running on Linux
+![ultimatesecuritycam](https://user-images.githubusercontent.com/30645315/49302849-31d16380-f4ee-11e8-9bfa-4e99866fa3bc.gif)
+
 
 ## Running instructions : 
 - Open up StarterCode.py in your preferred python IDE [UltimateSecurityCam.py](PythonCode/UltimateSecurityCam.py)
