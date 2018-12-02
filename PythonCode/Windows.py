@@ -33,6 +33,7 @@ initial = int(time.time())
 final = initial + 4
 
 while (final-initial):
+	#start timer on the frames
 	ret, frame = camera.read()
 	Text = "Starting in " + str(final-initial) + "..."
 	cv2.putText(frame,Text,(60,30),cv2.FONT_HERSHEY_TRIPLEX,1,(0,100,255),2)
