@@ -21,8 +21,8 @@ cameraSound = pygame.mixer.Sound("snapshotsound.ogg")
 size = (int(camera.get(cv2.CAP_PROP_FRAME_WIDTH)),
 		int(camera.get(cv2.CAP_PROP_FRAME_HEIGHT)))
 videoWriter = cv2.VideoWriter('basic_motion_detection.avi',
-							  cv2.VideoWriter_fourcc('D', 'I', 'V', 'X'),
-							  fps, size)
+				  cv2.VideoWriter_fourcc('D', 'I', 'V', 'X'),
+				  fps, size)
 
 def reset_camera():
 	#Reset the current program.
@@ -33,6 +33,7 @@ initial = int(time.time())
 final = initial + 4
 
 while (final-initial):
+	#start timer on the frames
 	ret, frame = camera.read()
 	Text = "Starting in " + str(final-initial) + "..."
 	cv2.putText(frame,Text,(60,30),cv2.FONT_HERSHEY_TRIPLEX,1,(0,100,255),2)
@@ -64,7 +65,7 @@ while (True):
 	diff = cv2.dilate(diff, es, iterations=2)
 	# Calculate the outline of the target in the image
 	image, cnts, hierarchy = cv2.findContours(diff.copy(),
-											  cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+						  cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 	print ("Detecting " + str(len(cnts)) + " Moving Objects")
 	if len(cnts) > 0:
 		cameraSound.play()
