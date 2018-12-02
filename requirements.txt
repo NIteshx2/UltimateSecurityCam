@@ -1,0 +1,11 @@
+numpy(version 1.15.4)
+pygame(1.9.4)
+opencv(3.4.4)
+pip(3.0)
+
+
+Methods for installing all the packages:
+pip3 - sudo apt install python3-pip
+numpy - pip3 install numpy
+opencv - pip3 install opencv-python
+pygame - pip3 install pygame
