@@ -20,7 +20,10 @@ pygame.mixer.init()
 cameraSound = pygame.mixer.Sound("snapshotsound.ogg")
 size = (int(camera.get(cv2.CAP_PROP_FRAME_WIDTH)),
 		int(camera.get(cv2.CAP_PROP_FRAME_HEIGHT)))
-videoWriter = cv2.VideoWriter('C:\\basic_motion_detection.avi',
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+videoWriter = cv2.VideoWriter(os.path.join(str(dir_path),'basic_motion_detection.avi'),
 				  cv2.VideoWriter_fourcc('D', 'I', 'V', 'X'),
 				  fps, size)
 
@@ -66,7 +69,8 @@ while (True):
 		cameraSound.play()
 
 	for c in cnts:
-		if cv2.contourArea(c) < 1500:
+		if cv2.contourArea(c) < (background.shape[0]*background.shape[1])/204:
+			#minimum area to be calculated based on image size and camera megapixels
 			continue
 		# Calculate the bounding box
 		(x, y, w, h) = cv2.boundingRect(c)
