@@ -75,7 +75,7 @@ Command (with Linux as the working directory):
 - The program takes 3-second waiting time, after that it starts detecting motion , making an alert sound.
 
 Many improvements and developments are in the pipeline! To know more, contact on github or niteshx22@gmail.com
-The project was created during Njack winter of code.
+The project was created during Njack winter of code ' 18.
 
 ## Get in touch
 ---
