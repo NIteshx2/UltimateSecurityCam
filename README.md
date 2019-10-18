@@ -30,7 +30,7 @@
 - Many issues are up-for-grabs. Check them out from issues tab.
 
 
-### Technologies:
+### Technologies used:
 - `Python 3.6`
 - `Opencv (cv2)` [tutorial](https://pythonprogramming.net/loading-images-python-opencv-tutorial/)
 
